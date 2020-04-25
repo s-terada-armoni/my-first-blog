@@ -18,5 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # デフォルトサイトに来たリクエストをblog.ulsにリダイレクト
     path('', include('blog.urls')),
 ]
